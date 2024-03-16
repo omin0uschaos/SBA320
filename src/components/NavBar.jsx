@@ -1,9 +1,15 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 function NavBar() {
   return (
     <nav>
-        <ul></ul>
+        <ul>
+            <li><div></div></li>
+            <li><Link /></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
     </nav>
   )
