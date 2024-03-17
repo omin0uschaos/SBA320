@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import '../styles/NavBar.css'
+import './NavBar.css'
 import Hamburger from "./Hamburger"
+import NavLogo from "./NavLogo"
 
 function NavBar() {
   const [showNav, setShowNav] = useState(false);
@@ -13,7 +14,7 @@ function NavBar() {
   return (
     <nav>
         <ul>
-            <li><div>LOGO</div></li>
+            <li id="logoLi"><NavLogo /></li>
             
             <div id="navLinks" className={showNav ? "show" : ""} onClick={() => setShowNav(false)}>
               

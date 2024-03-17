@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/NavBar'
 import Home from './pages/Home'
 
 import './App.css'
@@ -12,7 +12,7 @@ function App() {
     <NavBar />
     <Routes>
       <Route path='/' element={<Home />}>
-        
+
       </Route>
     </Routes>
 

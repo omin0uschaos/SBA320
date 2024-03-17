@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Hamburger.css'
+import './Hamburger.css'
 
 function Hamburger() {
     const [isActive, setIsActive] = useState(false);

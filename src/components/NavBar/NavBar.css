@@ -31,6 +31,19 @@ nav li{
     display: none;
 }
 
+#navLogo{
+  width: 50px;
+  margin-right: 20px;
+}
+
+#navText{
+  width: 150px;
+}
+
+#logoLi{
+  display: flex;
+}
+
 @media (max-width: 768px) {
 
   
@@ -61,12 +74,13 @@ nav li{
       flex-direction: column;
       top: 80px;
     }
+
+    #navLogo{
+      margin-right: 10px;
+    }
   }
   
-  
-  
-  
-  
+
   
   
   
