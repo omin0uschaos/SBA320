@@ -1,0 +1,29 @@
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(80%) contrast(120%) saturate(150%);
+  }
+  
+  header {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+  }
+  
+  @media (max-width: 768px){
+    #background-video {
+        left: 70%
+    }
+
+
+  }

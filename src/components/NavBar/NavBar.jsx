@@ -18,10 +18,10 @@ function NavBar() {
             
             <div id="navLinks" className={showNav ? "show" : ""} onClick={() => setShowNav(false)}>
               
-              <li>Home</li>
-              <li>About</li>
-              <li>Create</li>
-              <li>Contact</li>
+              <Link to='/'><li>Home</li></Link>
+              <Link to='/about'><li>About</li></Link>
+              <Link to='/create'><li>Create</li></Link>
+              <Link to='/Contact'><li>Contact</li></Link>
             </div>
             <div className="menuIcon" onClick={toggleNav}>
               <Hamburger />
