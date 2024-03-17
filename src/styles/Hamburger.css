@@ -1,10 +1,9 @@
-svg {
+.burger {
     height: 80px;
     position: absolute;
     width: 80px;
   }
   
-  }
   .plate {
     height: 80px;
     width: 80px;
@@ -15,6 +14,9 @@ svg {
   .x {
     transform: scale(0);
     transition: transform 400ms;
+    position: absolute;
+    height:80px;
+    width: 80px;
   }
   .line {
     fill: none;
@@ -71,31 +73,31 @@ svg {
   }
   .active.plate8 .line1 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
   }
   .active.plate8 .line2 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
     transition-delay: 20ms;
   }
   .active.plate8 .line3 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
     transition-delay: 40ms;
   }
   .active.plate8 .line4 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
     transition-delay: 60ms;
   }
   .active.plate8 .line5 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
     transition-delay: 80ms;
   }
   .active.plate8 .line6 {
     stroke-dasharray: 5 201;
-    stroke-dashoffset: -158px;
+    stroke-dashoffset: -160px;
     transition-delay: 100ms;
   }
   .active.plate8 .x {

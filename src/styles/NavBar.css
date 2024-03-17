@@ -1,3 +1,9 @@
+nav{
+    height:80px;
+    background-color: aquamarine;
+    z-index: 5;
+}
+
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -5,6 +11,8 @@ nav ul{
     list-style-type: none;
     margin:0 ;
     padding: 0 50px;
+    height: 100%;
+    align-items: center;
 }
 
 nav li{
@@ -15,4 +23,50 @@ nav li{
     display: flex;
     width: 80%;
     justify-content: space-around;
+    font-size: larger;
+    font-weight: 600;
 }
+
+.menuIcon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+  
+    #navLinks {
+      display: flex; 
+      position: absolute;
+      flex-direction: column;
+      top: -200px;
+      left: 0;
+      width: 100%;
+      background-color: aquamarine;
+      padding: 10px 0;
+      transition: all 0.4s ease-in-out;
+      z-index: 1;
+      align-items: center;
+    }
+
+    #navLinks li{
+        margin-bottom: 10px;
+    }
+  
+    .menuIcon {
+      display: inline-block;
+    }
+  
+    #navLinks.show {
+      display: flex;
+      flex-direction: column;
+      top: 80px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
