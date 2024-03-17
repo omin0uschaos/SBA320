@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
 import Home from './pages/Home'
-import NavBar from './components/navBar'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
