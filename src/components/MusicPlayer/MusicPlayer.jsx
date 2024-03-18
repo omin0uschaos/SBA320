@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import audioFilesData from './songFiles.json';
+import MusicVisualizer from './MusicVisualizer';
 
 function MusicPlayer() {
   const [audioFiles, setAudioFiles] = useState([]);
@@ -82,7 +83,7 @@ function MusicPlayer() {
     if (isPlaying) {
       audio.play();
     }
-    setCurrentTime(0); // Reset currentTime
+    setCurrentTime(0);
   };
 
   const handleTimeChange = (e) => {
@@ -99,6 +100,7 @@ function MusicPlayer() {
 
   return (
     <div>
+        <MusicVisualizer audio={audio} isPlaying={isPlaying} />
         <input
         type="range"
         min={0}
@@ -120,6 +122,9 @@ function MusicPlayer() {
         value={volume}
         onChange={handleVolumeChange}
       />
+
+
+
     </div>
   );
 }
