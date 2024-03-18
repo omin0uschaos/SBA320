@@ -10,6 +10,12 @@
     z-index: -1;
     filter: brightness(80%) contrast(120%) saturate(130%);
   }
+
+  #homeMainSection{
+    position: relative;
+    color: white;
+    top: -80px;
+  }
   
 #vidContainer{
     
@@ -20,6 +26,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -32,7 +39,60 @@
     font-weight: 500;
     width: 100vw;
   }
+  #heroButton{
+    font-size: 2em;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    transition-duration: 300ms;
+  }
+  #heroButton:hover{
+    background-color: rgba(255, 255, 255, 0.361);
+  }
   
+  #introSection{
+    height: 500px;
+    background-color: rgb(43, 226, 202);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.6em;
+  }
+  #introSection p{
+text-align: center;
+
+  }
+  #featureSection{
+    height: 500px;
+    padding: 50px;
+  }
+  #featureSection h2{
+    margin-bottom: 100px;
+  }
+  #featureSection li{
+    margin-bottom: 20px;
+  }
+  #ctaSection{
+
+    height:300px;
+    padding: 50px;
+    background-color: rgb(141, 28, 50);
+    text-align: center;
+
+  }
+
+  #ctaSection button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    border-radius: 8px;
+    margin-top: 100px;
+  }
+
   @media (max-width: 768px){
     #background-video {
         left: 70%

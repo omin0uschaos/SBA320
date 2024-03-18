@@ -7,7 +7,7 @@ function MusicVisualizer({ audio, isPlaying }) {
 
   useEffect(() => {
     const hueInterval = setInterval(() => {
-      setHue((prevHue) => (prevHue + 1) % 360); // Increment hue slowly
+      setHue((prevHue) => (prevHue + 1) % 360); 
     }, 1000);
 
     return () => clearInterval(hueInterval);
