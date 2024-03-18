@@ -1,14 +1,37 @@
-import './WritersBlock.css'
+import React, { useState } from 'react';
+import './WritersBlock.css';
 
 function WritersBlock() {
+  const [writerTitle, setWriterTitle] = useState('');
+  const [writerBlock, setWriterBlock] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Save data to localStorage
+    localStorage.setItem(writerTitle, writerBlock);
+    setWriterTitle('');
+    setWriterBlock('');
+  };
+
   return (
-
-      <form action="">
-        <textarea name="" id="" ></textarea>
-        <input type="submit" value="Submit" />
-      </form>
-
-  )
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="writerTitle"
+        value={writerTitle}
+        onChange={(e) => setWriterTitle(e.target.value)}
+        placeholder="Enter title"
+        required
+      />
+      <textarea
+        name="writerBlock"
+        value={writerBlock}
+        onChange={(e) => setWriterBlock(e.target.value)}
+        placeholder="Write anything you want"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  );
 }
 
-export default WritersBlock
+export default WritersBlock;

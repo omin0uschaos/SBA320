@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './Hamburger.css'
+import { useState } from 'react';
+import './Hamburger.css';
 
-function Hamburger() {
-    const [isActive, setIsActive] = useState(false);
+function Hamburger({ isActive, setIsActive }) {
+
 
     const toggleMenu = () => {
         setIsActive(!isActive);

@@ -31,3 +31,7 @@
     .div6 { grid-area: 3 / 6 / 6 / 8; 
     
     }
+
+    .quoteDiv{
+        padding: 10px;
+    }

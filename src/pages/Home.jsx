@@ -6,10 +6,13 @@ function Home() {
   return (
     <>
       <header>
-        <video id="background-video" autoPlay loop muted>
-      <source src={video} type='video/mp4' />
-        </video>
-        <h1>Feeling Stuck?</h1>
+        <div id='vidContainer'>
+          <video id="background-video" autoPlay loop muted>
+          <source src={video} type='video/mp4' />
+          </video>
+        </div>
+        
+        <span id='heroTitle'>Break Through Your Creative Block</span>
 
       </header>
       
