@@ -6,7 +6,9 @@ import RandomPlace from './RandomPlace'
 
 function RandomGen() {
   return (
-    <><div id='randomGenDiv'>
+    <>
+        <h3>Random Generator</h3>
+        <div id='randomGenDiv'>
         <RandomName />
         <RandomPlace />
         

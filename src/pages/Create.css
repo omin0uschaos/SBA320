@@ -20,7 +20,7 @@
         justify-content: center;
     }
     .div4 { grid-area: 3 / 1 / 6 / 3; 
-    
+        text-align: center;
     }
     .div5 { grid-area: 3 / 3 / 6 / 6; 
         display: flex;

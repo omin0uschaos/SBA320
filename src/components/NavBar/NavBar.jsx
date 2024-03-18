@@ -21,6 +21,7 @@ function NavBar() {
                   <Link to='/'><li>Home</li></Link>
                   <Link to='/about'><li>About</li></Link>
                   <Link to='/create'><li>Create</li></Link>
+                  <Link to='/creations'><li>Creations</li></Link>
                   <Link to='/Contact'><li>Contact</li></Link>
                 </div>
                 <div className="menuIcon" onClick={toggleNav}>

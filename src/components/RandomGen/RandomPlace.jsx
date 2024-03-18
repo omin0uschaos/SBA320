@@ -8,9 +8,9 @@ function RandomPlace() {
 
     const getPlace = async () => {
         try {
-            const url = "https://random-data-api.com/api/v3/projects/f89e59a9-fe33-4e4c-911c-88450bd1847b";
+            const url = "https://randomuser.me/api/";
             const res = await axios.get(url);
-            setPlace(`${res.data.city}, ${res.data.country}`);
+            setPlace(`${res.data.results[0].location.city} ${res.data.results[0].location.country}`);
         } catch (error) {
             console.error(error);
         }

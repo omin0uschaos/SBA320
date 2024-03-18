@@ -18,6 +18,7 @@ function WritersBlock() {
       <input
         type="text"
         name="writerTitle"
+        id='writerTitle'
         value={writerTitle}
         onChange={(e) => setWriterTitle(e.target.value)}
         placeholder="Enter title"
@@ -29,7 +30,7 @@ function WritersBlock() {
         onChange={(e) => setWriterBlock(e.target.value)}
         placeholder="Write anything you want"
       ></textarea>
-      <input type="submit" value="Submit" />
+      <input id='writerSubmit' type="submit" value="Submit" />
     </form>
   );
 }
