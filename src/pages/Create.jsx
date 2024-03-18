@@ -3,6 +3,7 @@ import RandomQuote from '../components/RandomQuote'
 import RandomImage from '../components/RandomImage'
 import Timer from '../components/Timer/Timer'
 import WritersBlock from '../components/WritersBlock/WritersBlock'
+import MusicPlayer from '../components/MusicPlayer/MusicPlayer'
 
 function Create() {
   return (
@@ -13,7 +14,7 @@ function Create() {
       <div className="div3"><Timer /></div>
       <div className="div4"> </div>
       <div className="div5"><WritersBlock /></div>
-      <div className="div6"> </div>
+      <div className="div6"><MusicPlayer /></div>
       </div>
     </>
   )

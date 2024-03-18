@@ -36,13 +36,13 @@ function Timer() {
 
   return (
     <div className="countdown-timer">
-            <div class="box-canvas">
-    <div class="frame">
-      <div class="top"></div>
-      <div class="bottom">
-        <div class="drip"></div>
-        <div class="blob"></div>
-        <div class="glass"></div>
+            <div className="box-canvas">
+    <div className="frame">
+      <div className="top"></div>
+      <div className="bottom">
+        <div className="drip"></div>
+        <div className="blob"></div>
+        <div className="glass"></div>
       </div>
       
      </div>
