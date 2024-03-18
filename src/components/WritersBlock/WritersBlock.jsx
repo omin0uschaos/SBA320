@@ -25,6 +25,7 @@ function WritersBlock() {
         required
       />
       <textarea
+        className="writerBlockText"
         name="writerBlock"
         value={writerBlock}
         onChange={(e) => setWriterBlock(e.target.value)}

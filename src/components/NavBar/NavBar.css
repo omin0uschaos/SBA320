@@ -31,6 +31,10 @@ nav li{
 #navLinks a{
   text-decoration: none;
   color: white;
+  transition-duration: 300ms;
+}
+#navLinks a:hover{
+  color: rgb(175, 175, 175);
 }
 
 .menuIcon{

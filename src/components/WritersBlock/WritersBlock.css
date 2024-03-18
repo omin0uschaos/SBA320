@@ -1,4 +1,4 @@
-textarea{
+.writerBlockText{
     max-width:100%;
     flex-grow: 1;
     border: 0;
@@ -8,7 +8,7 @@ textarea{
     resize: none;
     color: white;
 }
-textarea:focus{
+.writerBlockText:focus{
     outline: 0;
 }
 
