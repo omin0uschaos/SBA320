@@ -24,7 +24,6 @@ function NavBar() {
                   <Link to='/Contact'><li>Contact</li></Link>
                 </div>
                 <div className="menuIcon" onClick={toggleNav}>
-                  {/* Pass showNav as a prop to control the Hamburger's active state */}
                   <Hamburger isActive={showNav} setIsActive={setShowNav} />
                 </div>
             </ul>
