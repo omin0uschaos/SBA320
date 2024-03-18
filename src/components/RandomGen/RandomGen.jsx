@@ -1,8 +1,17 @@
 import React from 'react'
+import './RandomGen.css'
+import RandomName from './RandomName'
+import RandomPlace from './RandomPlace'
+
 
 function RandomGen() {
   return (
-    <div>RandomGen</div>
+    <><div id='randomGenDiv'>
+        <RandomName />
+        <RandomPlace />
+        
+        </div>
+    </>
   )
 }
 

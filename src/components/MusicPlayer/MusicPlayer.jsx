@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import audioFilesData from './songFiles.json';
 import MusicVisualizer from './MusicVisualizer';
+import './MusicPlayer.css'
 
 function MusicPlayer() {
   const [audioFiles, setAudioFiles] = useState([]);
@@ -99,7 +100,7 @@ function MusicPlayer() {
   };
 
   return (
-    <div>
+    <div id='musicPlayerDiv'>
         <MusicVisualizer audio={audio} isPlaying={isPlaying} />
         <input
         type="range"
