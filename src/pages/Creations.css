@@ -1,0 +1,32 @@
+#creationsSection h1, #creationSection h1{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+#creationsSection ul{
+    list-style-type: none;
+}
+#creationsSection li{
+    margin-bottom: 20px;
+}
+#creationsSection a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+
+}
+#creationsSection button{
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    border: 0;
+    transition-duration: 300ms;
+}
+#creationsSection button:hover{
+    background-color: rgb(250, 77, 77);
+}
+#creationSection p{
+    padding: 50px;
+    color: white;
+}

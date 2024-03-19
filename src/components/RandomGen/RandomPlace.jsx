@@ -40,11 +40,11 @@ function RandomPlace() {
     };
 
     return (
-        <>
-            <button type="button" onClick={handleClick}><img src={placeIcon} alt="Place" /></button>
-            <div><input id="placeDiv" value={place} /><input type="button" value="Copy" onClick={copyToClipboard} /></div>
+        <div className="randomGenContainer">
+            <button type="button" onClick={handleClick}><img src={placeIcon} alt="Place" /></button><br />
+            <div><input id="placeDiv" value={place} /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
                 
-        </>
+        </div>
     );
 }
 

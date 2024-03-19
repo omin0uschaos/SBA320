@@ -30,7 +30,7 @@ function MusicVisualizer({ audio, isPlaying }) {
 
     src.connect(analyser);
     analyser.connect(context.destination);
-    analyser.fftSize = 256;
+    analyser.fftSize = 512;
 
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
@@ -69,7 +69,7 @@ function MusicVisualizer({ audio, isPlaying }) {
     };
   }, [audio, isPlaying, hue]);
 
-  return <canvas ref={canvasRef} width="640" height="360" style={{ width: '90%', height: 'auto' }} />;
+  return <canvas ref={canvasRef} width="640" height="200" style={{ width: '90%', height: 'auto' }} />;
 }
 
 export default MusicVisualizer;

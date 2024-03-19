@@ -25,6 +25,7 @@
 }
 #songProgressBar{
     margin-top: 20px;
+    width: 80%;
 
 }
 #volumeDiv{
@@ -35,7 +36,7 @@
   width: 25px;
 }
 #volumeRange{
-  width: 100%;
+  width: 80%;
 }
 
 /*********** Baseline, reset styles ***********/
@@ -44,7 +45,6 @@ input[type="range"] {
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 100%;
   }
   
   /* Removes default focus */

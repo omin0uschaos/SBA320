@@ -11,7 +11,7 @@ function Create() {
     <>
     <div className="parent">
       <div className="div1"><RandomQuote /></div>
-      <div className="div2"><RandomImage /></div>
+      <div id="randomImageDiv" className="div2"><RandomImage /></div>
       <div className="div3"><Timer /></div>
       <div className="div4"><RandomGen /> </div>
       <div className="div5"><WritersBlock /></div>

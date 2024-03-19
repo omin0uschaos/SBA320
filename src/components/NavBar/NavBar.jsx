@@ -14,7 +14,7 @@ function NavBar() {
     return (
         <nav>
             <ul>
-                <li id="logoLi"><NavLogo /></li>
+                <Link to='/'><li id="logoLi"><NavLogo /></li></Link>
                 
                 <div id="navLinks" className={showNav ? "show" : ""} onClick={() => setShowNav(false)}>
                   

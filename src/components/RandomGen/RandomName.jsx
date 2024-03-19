@@ -40,10 +40,10 @@ function RandomName() {
     };
 
     return (
-        <>        
-            <button type="button" onClick={handleClick}><img src={personIcon} alt="Person" /></button>
-            <div><input id="nameDiv" value={name} /><input type="button" value="Copy" onClick={copyToClipboard} /></div>
-        </>
+        <div className="randomGenContainer">        
+            <button type="button" onClick={handleClick}><img src={personIcon} alt="Person" /></button><br />
+            <div><input id="nameDiv" value={name} /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
+        </div>
     );
 }
 

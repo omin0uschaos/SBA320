@@ -3,9 +3,13 @@ import axios from "axios";
 
 function RandomImage() {
     const [imageUrl, setImageUrl] = useState(null);
+    const [imageSize, setImageSize] = useState(null);
 
     useEffect(() => {
-        const url = "https://picsum.photos/600/300";
+        const divSize = document.getElementById('randomImageDiv').getBoundingClientRect()
+        let divWidth = Math.floor(divSize.width);
+        let divHeight = Math.floor(divSize.height)
+        const url = `https://picsum.photos/${divWidth}/${divHeight}`;
 
         async function getImage() {
             try {
@@ -18,11 +22,12 @@ function RandomImage() {
 
         getImage();
     }, []);
+    
 
     return (
         <>
-            <div className="randomImageDiv">
-                {imageUrl && <img src={imageUrl} alt="Random Image" />}
+            <div>
+                <img src={imageUrl} alt="Random Image" />
             </div>
         </>
     );

@@ -79,6 +79,7 @@ nav li{
   
     .menuIcon {
       display: inline-block;
+      cursor: pointer;
     }
   
     #navLinks.show {
