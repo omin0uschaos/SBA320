@@ -140,7 +140,7 @@
   @keyframes raiseBottomSand {
     0% {
       transform: translate(-50%, 80px);
-      boder-radius: 0;
+      border-radius: 0;
     }
     
     100% {
