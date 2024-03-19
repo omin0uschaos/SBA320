@@ -4,7 +4,7 @@ import placeIcon from '../../assets/images/place.svg'
 
 
 function RandomPlace() {
-    const [place, setPlace] = useState(null);
+    const [place, setPlace] = useState('');
 
     const getPlace = async () => {
         try {
@@ -42,7 +42,7 @@ function RandomPlace() {
     return (
         <div className="randomGenContainer">
             <button type="button" onClick={handleClick}><img src={placeIcon} alt="Place" /></button><br />
-            <div><input id="placeDiv" value={place} /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
+            <div><input id="placeDiv" value={place} readOnly /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
                 
         </div>
     );

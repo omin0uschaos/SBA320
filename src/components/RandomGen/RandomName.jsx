@@ -4,9 +4,9 @@ import personIcon from '../../assets/images/person.svg'
 
 
 function RandomName() {
-    const [name, setName] = useState(null);
+    const [name, setName] = useState('');
 
-    const getName = async () => { // Define getName function outside of useEffect
+    const getName = async () => {
         try {
             const url = "https://randomuser.me/api/";
             const res = await axios.get(url);
@@ -17,17 +17,13 @@ function RandomName() {
     };
 
     function copyToClipboard() {
-        // Get the text field
         var copyText = document.getElementById('nameDiv');
       
         // Select the text field
         copyText.select();
-        copyText.setSelectionRange(0, 99999); // For mobile devices
-      
+        copyText.setSelectionRange(0, 99999);
         // Copy the text inside the text field
         navigator.clipboard.writeText(copyText.value);
-        
-        // Alert the copied text
         alert("Copied the text: " + copyText.value);
       }
 
@@ -42,7 +38,7 @@ function RandomName() {
     return (
         <div className="randomGenContainer">        
             <button type="button" onClick={handleClick}><img src={personIcon} alt="Person" /></button><br />
-            <div><input id="nameDiv" value={name} /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
+            <div><input id="nameDiv" value={name} readOnly /><input className="copyButton" type="button" value="Copy" onClick={copyToClipboard} /></div>
         </div>
     );
 }
