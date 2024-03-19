@@ -12,7 +12,10 @@
     height:220px;
     transform: scale(50%);
   }
-  
+  .countdown-timer button{
+    padding: 15px;
+
+  }
   
   .frame {
     position: absolute;

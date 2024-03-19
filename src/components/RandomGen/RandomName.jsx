@@ -16,6 +16,21 @@ function RandomName() {
         }
     };
 
+    function copyToClipboard() {
+        // Get the text field
+        var copyText = document.getElementById('nameDiv');
+      
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+      
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+        
+        // Alert the copied text
+        alert("Copied the text: " + copyText.value);
+      }
+
     useEffect(() => {
         getName();
     }, []);
@@ -27,9 +42,7 @@ function RandomName() {
     return (
         <>        
             <button type="button" onClick={handleClick}><img src={personIcon} alt="Person" /></button>
-            <div className="nameDiv">
-                {name}
-            </div>
+            <div><input id="nameDiv" value={name} /><input type="button" value="Copy" onClick={copyToClipboard} /></div>
         </>
     );
 }

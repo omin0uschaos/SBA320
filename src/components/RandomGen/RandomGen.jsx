@@ -4,6 +4,8 @@ import RandomName from './RandomName'
 import RandomPlace from './RandomPlace'
 
 
+
+
 function RandomGen() {
   return (
     <>

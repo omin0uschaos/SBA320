@@ -24,8 +24,8 @@ function RandomQuote() {
     return (
         <>
             <div className="quoteDiv">
-                <p>{quote}</p>
-                <p>{author}</p>
+                <p id="quoteP">{quote}</p>
+                <p id="authorP">-{author}</p>
             </div>
         </>
     );

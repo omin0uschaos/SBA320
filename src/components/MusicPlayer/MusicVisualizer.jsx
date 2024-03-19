@@ -69,7 +69,7 @@ function MusicVisualizer({ audio, isPlaying }) {
     };
   }, [audio, isPlaying, hue]);
 
-  return <canvas ref={canvasRef} width="640" height="360" style={{ width: '100%', height: 'auto' }} />;
+  return <canvas ref={canvasRef} width="640" height="360" style={{ width: '90%', height: 'auto' }} />;
 }
 
 export default MusicVisualizer;

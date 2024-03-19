@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import audioFilesData from './songFiles.json';
 import MusicVisualizer from './MusicVisualizer';
 import './MusicPlayer.css'
+import playIcon from '../../assets/images/playicon.png'
+import pauseIcon from '../../assets/images/pauseicon.png'
+import prevIcon from '../../assets/images/previcon.png'
+import nextIcon from '../../assets/images/nexticon.png'
+import voldownIcon from '../../assets/images/volumeicondown.png'
+import volupIcon from '../../assets/images/volumeiconup.png'
+
+
 
 function MusicPlayer() {
   const [audioFiles, setAudioFiles] = useState([]);
@@ -103,19 +111,22 @@ function MusicPlayer() {
     <div id='musicPlayerDiv'>
         <MusicVisualizer audio={audio} isPlaying={isPlaying} />
         <input
+        id='songProgressBar'
         type="range"
         min={0}
         max={audio.duration || 0}
         value={currentTime}
         onChange={handleTimeChange}
       />
-      <div>
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'}</button>
-        <button onClick={handleNext}>Next</button>
+      <div id='trackControlsDiv'>
+        <button onClick={handlePrevious}><img src={prevIcon} alt="Prev" /></button>
+        <button onClick={togglePlay}><img src={isPlaying ? pauseIcon : playIcon} alt={isPlaying ? "Pause" : "Play"} /></button>
+        <button onClick={handleNext}><img src={nextIcon} alt="Next" /></button>
       </div>
-
+        <div id='volumeDiv'>
+        <img src={voldownIcon} alt="Down" />
       <input
+      id='volumeRange'
         type="range"
         min={0}
         max={1}
@@ -123,8 +134,8 @@ function MusicPlayer() {
         value={volume}
         onChange={handleVolumeChange}
       />
-
-
+    <img src={volupIcon} alt="up" />
+      </div>
 
     </div>
   );
