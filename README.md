@@ -1,5 +1,8 @@
 # Creavara
 
+![image](https://github.com/omin0uschaos/SBA320/assets/10238707/3602453f-050d-4e95-8a02-979a37bb9526)
+
+
 
 ## Introduction
 
@@ -29,6 +32,11 @@ With a clear concept in mind, the next step involved researching potential APIs 
 ### Design and Naming
 
 The design phase kicked off with creating wireframes and UI concepts in Figma. It was crucial to visualize how the app would look and function, ensuring a user-friendly and engaging experience. Concurrently, the search for a fitting name led to "Creavara" — a blend of creativity and "ara," a Latin word signifying "altar," "refuge," or "sanctuary." The inclusion of "v" aimed to enhance the name's phonetic appeal. Inspired by ancient symbols and Lovecraftian design, the logo and text were crafted in Adobe Illustrator, encapsulating the app's essence and vision.
+#### Desktop View
+![image](https://github.com/omin0uschaos/SBA320/assets/10238707/58b0e151-b3f9-424e-a768-97a6c9507086)
+#### Mobile View
+![image](https://github.com/omin0uschaos/SBA320/assets/10238707/6492a452-3c4d-4095-87aa-27e7f8707657)
+
 
 ### Development and Challenges
 
